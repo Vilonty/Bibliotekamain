@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+}
+
+body{
+
+    background: url("../images/registrer/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/*БЛОК1*/
+
+.BLOCK1{
+
+    position: relative;
+    background-color: rgba(22, 24, 26, 0.95);
+    width: 570px;
+    height: 630px;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 20px;
+
+}
