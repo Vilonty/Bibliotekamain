@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta name="Author" content="Котиков Егор 1ИСП-21">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Библиотека</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+
+        <link rel="shortcut icon" href="./ICON/icon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+        <header class="tophead">
+
+            <div class="toplogo">
+                <a href="./pages/inventar.html"><img src="./images/logo.png" alt="Логотип"></a>
+            </div>
+
+            <nav class="nov">
+
+                <a class="nav-item" href="./pages/inventar.html">инвентарь</a>
+                <a class="nav-item" href="./pages/katalog.html">каталог</a>
+                <a class="nav-item" href="./pages/poddejka.html">поддержка</a>
+
+            </nav>
+
+            <div class="profil">
+
+                <a class="nav-prof" href="./pages/profil.html">профиль</a>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="top">
+                
+
+                <img src="./images/bg.jpg" alt="Фоновая картинка">
+
+                <div class="prnad">
+                        
+                    <span style="font-size: 47px;">Добро пожаловать в мир книг</span>
+                    <p style="font-weight: bold; font-size: 25px;">"Чтение - вот лучшее ученеие." А.С. Пушкин</p>
+                    <a href="./pages/katalog.html">изучить каталог</a>
+
+
+                </div>
+
+        
+            </div>
+
+            <div class="BLOCK1">
+                <div class="mBook">
+                    <div class="mBookzag">
+                      <span style="font-weight: bold;font-size: 38px;">КНИГА МЕСЯЦА</span>
+                    </div>
+                    <img src="./images/mbook.png" alt="обложка книги месяца">
+                  </div>
+                  
+
+                <div class="altBook">
+
+                    <div class="altBookzag">
+                        <span style="font-weight: bold;font-size: 38px;">1984</span>
+                    </div>
+
+                    <div class="altBookalt">
+
+                        <hr class="hrtop">
+                        <p class="altb">культовый роман Джорджа Оруэлла, действие которого разворачивается в тоталитарном, бюрократическом государстве, где процветает пропаганда и цензура, а тотальная слежка ведется круглосуточно, и где один человек решил побороться за право быть индивидуальной личностью.</p>
+                        <hr class="hrdown">
+                    
+                        <a class="inter" href="#">читать далее</a>
+                        
+                    </div>
+                        
+                        
+                        
+                    
+                    
+                    
+                </div>
+
+                
+            </div>
+
+            <div class="BLOCK2">
+                <div class="BLOCK2zag">
+                    <span>изучайте новые жанры с нами</span>
+                </div>
+                <div class="BLOCK2content">
+            
+                    <div class="podblock">
+                        <a href="#">
+                            <img src="./images/v4_101.png" alt="картинка книги">
+                            <span class="inter">готика</span>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="podblock">
+                        <a href="#">
+                            <img src="./images/v4_102.png" alt="картинка книги">
+                            <span class="inter">саспенс</span>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="podblock">
+                        <a href="#">
+                            <img src="./images/v4_103.png" alt="картинка книги">
+                            <span class="inter">роман</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="BLOCK3">
+                <div class="BLOCK3zag">
+                    познакомьтесь с новыми авторами
+                </div>
+                <div class="block3podblock">
+                    <a class="inter" href="./pages/inventar.html" style="font-weight: 250;">инвентарь</a>
+                    <img src="./images/block3bg1.png" alt="фоное изображение 3 блока">
+                </div>
+                <div class="block3podblock">
+                    <a class="inter" href="./pages/katalog.html" style="font-weight: 250;">каталог</a>
+                    <img src="./images/block3bg2.png" alt="фоное изображение 3 блока">
+                </div>
+                <div class="block3podblock">
+                    <a class="inter" href="./pages/profil.html" style="font-weight: 250;">профиль</a>
+                    <img src="./images/block3bg3.png" alt="фоное изображение 3 блока">
+                </div>
+            </div>
+
+        </main>
+
+          
+
+        <footer class="foot">
+
+            <div class="footlogo">
+                <a href="./pages/inventar.html"><img src="./images/logo.png" alt="Логотип"></a>
+            </div>
+
+
+
+            <div class="contacs">
+
+                <span>наши контакты</span>
+                <span id="copyText">+8-XXX-XXX-XX-XX</span>
+
+                <script> 
+
+                    function copyNumber(){ 
+
+                        const textEl = document.getElementById('copyText'); 
+                        const textToCopy = textEl.textContent; 
+             
+                        const textarea = document.createElement('textarea'); 
+                        textarea.value = textToCopy; 
+                        document.body.appendChild(textarea); 
+                        textarea.select(); 
+                        document.execCommand('copy'); 
+                        document.body.removeChild(textarea); 
+            
+     
+                    } 
+                  
+                    document.getElementById('copyText').addEventListener('click', copyNumber); 
+
+                </script> 
+                
+                <div class="socialicon">
+
+                    <a href="#"><img src="./images/inst.png" alt="текстурка инстраграмма"></a>
+                    <a href="#"><img src="./images/disc.png" alt="текстурка дискорда"></a>
+                    <a href="#"><img src="./images/telegr.png " alt="текстурка телеграмма"></a>
+
+                </div>
+
+            </div>
+
+            <div class="footnav">
+                <a href="#"><span>условия пользования</span></a>
+                <a href="#"><span>права</span></a>
+                <a href="#"><span>товарные знаки</span></a>
+                <a href="#"><span>о рекламе</span></a>
+            </div>
+            
+        </footer>
+    </body>
+
+</html>
